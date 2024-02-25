@@ -1,0 +1,32 @@
+---
+import Social from "./Social.astro";
+import Mail from "../components/Mail.astro";
+import Mobile from "../components/Mobile.astro";
+---
+
+<section
+  id="footer"
+  class="flex flex-col gap-8 w-full max-w-screen-md m-auto px-4 md:px-8 py-14"
+>
+  <h1
+    class="bg-gradient-to-r from-blue-900 via-blue-400 to-green-100 text-transparent bg-clip-text text-3xl md:text-2xl lg:text-4xl font-bold"
+  >
+    Contactame.
+  </h1>
+
+  <p class="text-sm text-left">
+    No dudes en contactarme a través de estos medios; te prometo que responderé
+    rápidamente. ¡Estoy aquí para ayudarte y espero con ansias tu mensaje!
+  </p>
+
+  <div class="flex gap-4 flex-wrap">
+    <Social>
+      <Mail />
+      angangbp284@gmail.com
+    </Social>
+    <Social>
+      <Mobile class="size-4" />
+      7293100617
+    </Social>
+  </div>
+</section>

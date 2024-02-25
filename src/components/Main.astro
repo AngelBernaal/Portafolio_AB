@@ -1,0 +1,49 @@
+---
+import Burbuja from "../components/Burbuja.astro";
+import GitHub from "../components/GitHub.astro";
+import Social from "../components/Social.astro";
+import Mail from "../components/Mail.astro";
+---
+
+<section
+  class="flex flex-col gap-8 w-full max-w-screen-md m-auto px-4 md:px-8 py-14 md:py-20 lg:py-28"
+>
+  <h1
+    class="bg-gradient-to-r from-blue-900 via-blue-400 to-green-100 text-transparent bg-clip-text text-3xl md:text-2xl lg:text-4xl font-bold"
+  >
+    Hola, Soy Angel Bernal.
+  </h1>
+
+  <span class=""><Burbuja>Disponible 💻</Burbuja></span>
+
+  <h3 class="text-sm md:text-sm">
+    Egresado de la carrera de Ingeniería en Sistemas Computacionales, me
+    apasiona la tecnología, en especial lo relacionado con el <span
+      class="font-bold">soporte</span
+    > y la <span class="font-bold">programación web</span>. Estoy en busca de
+    nuevos retos que me permitan crecer laboralmente.
+  </h3>
+
+  <ul class="flex gap-4 flex-wrap">
+    <li>
+      <Social href="https://github.com/AngelBernaal">
+        <GitHub class="size-4" />
+        GitHub
+      </Social>
+    </li>
+
+    <li>
+      <Social
+        class="size-4"
+        href="mailto:angel0000bernal@gmail.com?subject=Asunto del correo&body=Cuerpo del mensaje"
+      >
+        <Mail />
+        Correo
+      </Social>
+    </li>
+
+    <li>
+      <Social href="/ACV_APB.pdf" target="_blank">Descargar CV</Social>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,51 @@
+---
+import CardPro from "./CardPro.astro";
+import Social from "./Social.astro";
+---
+
+<section id="proyectos"
+  class="flex flex-col gap-8 w-full max-w-screen-md m-auto px-4 py-14 md:px-8 md:py-24"
+>
+  <h1
+    class="bg-gradient-to-r from-blue-900 via-blue-400 to-green-100 text-transparent bg-clip-text text-3xl md:text-2xl lg:text-4xl font-bold"
+  >
+    Proyectos.
+  </h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <CardPro>
+      <h1 class="font-bold">CRUD</h1>
+      <img src="image6.png" alt="interfaz crud" class="w-80" />
+      <p class="text-center">
+        Un sistema diseñado para facilitar la reserva de boletos de cine para
+        una película específica, así como también permitir su cancelación
+        posterior, representa una solución integral para la gestión de reservas.
+      </p>
+
+      <div class="flex gap-4 flex-wrap">
+        <img src="/html5.svg" alt="html" class="size-5" />
+        <img src="/css.svg" alt="css" class="size-5" />
+        <img src="/php.svg" alt="php" class="size-5" />
+        <img src="/mysql.svg" alt="mysql" class="size-5" />
+      </div>
+    </CardPro>
+
+    <CardPro>
+      <h1 class="font-bold">Página Autos</h1>
+      <img src="image7.png" alt="interfaz crud" class="w-80" />
+      <p class="text-center">
+        Un sistema integral que ofrece información sobre automóviles,
+        características, videos, ubicaciones y permite iniciar sesión, todo con
+        el propósito de crear una experiencia web dinámica.
+      </p>
+
+      <div class="flex gap-4 flex-wrap">
+        <img src="/html5.svg" alt="html" class="size-5" />
+        <img src="/css.svg" alt="css" class="size-5" />
+        <img src="/js.svg" alt="javascript" class="size-5" />
+        <img src="/php.svg" alt="php" class="size-5" />
+        <img src="/mysql.svg" alt="mysql" class="size-5" />
+      </div>
+    </CardPro>
+  </div>
+</section>

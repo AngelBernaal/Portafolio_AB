@@ -1,0 +1,47 @@
+---
+import Card from "./Card.astro";
+---
+
+<section id="skills"
+  class="flex flex-col gap-8 w-full max-w-screen-md m-auto px-4 md:px-8 py-14"
+>
+  <h1
+    class="bg-gradient-to-r from-blue-900 via-blue-400 to-green-100 text-transparent bg-clip-text text-3xl md:text-2xl lg:text-4xl font-bold break-words"
+  >
+    Habilidades.
+  </h1>
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 items-center justify-center gap-4"
+  >
+    <Card>
+      <img src="image3.png" alt="Frontend" class="size-8" />
+      <h1 class="font-bold">Frontend</h1>
+      <p class="text-sm text-left">
+        Conocimientos Jr. en HTML, CSS y JavaScript. Estas destrezas
+        fundamentales no solo me han abierto las puertas al emocionante mundo
+        del desarrollo web, sino que también me han capacitado para crear
+        contenido web funcional.
+      </p>
+    </Card>
+
+    <Card>
+      <img src="image4.png" alt="Backend" class="size-8" />
+      <h1 class="font-bold">Backend</h1>
+      <p class="text-sm text-left">
+        Conocimientos básicos en PHP y MySQL para el desarrollo de páginas web
+        conectadas a bases de datos. Desde la creación de la base de datos hasta
+        la implementación de la conexión, dispuesto a seguir aprendiendo.
+      </p>
+    </Card>
+
+    <Card>
+      <img src="image5.png" alt="Soporte Técnico" class="size-8" />
+      <h1 class="font-bold">Soporte</h1>
+      <p class="text-sm text-left">
+        Habilidades en soporte técnico que abarcan desde la instalación de
+        sistemas operativos, mantenimiento preventivo y correctivo hasta la
+        instalación de software y cambio de componentes como discos, RAM, etc.
+      </p>
+    </Card>
+  </div>
+</section>
