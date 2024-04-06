@@ -1,29 +1,57 @@
 ---
-
+import MenuH from "../components/MenuH.astro";
+import Close from "../components/Close.astro";
 ---
 
-<header
-  class="mt-4 flex flex-col md:flex-row items-center justify-around p-4 flex-wrap gap-y-2 md:gap-x-2"
->
-  <img src="/image2.png" alt="Angel Bernal" class="size-12 md:size-16" />
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const abrir = document.getElementById("abrir");
+    const menu = document.querySelector(".menu");
+    const close = document.getElementById("close");
+    const quitarM = document.querySelectorAll(".quitarM");
 
+    abrir.addEventListener("click", function () {
+      menu.classList.remove("menu");
+    });
+
+    close.addEventListener("click", function () {
+      menu.classList.add("menu");
+    });
+
+    quitarM.forEach(function (quitarM) {
+      quitarM.addEventListener("click", function () {
+        menu.classList.add("menu");
+      });
+    });
+  });
+</script>
+
+<header class="flex flex-wrap items-center justify-between p-4" id="inicio">
+  <img src="/image.png" alt="logo" class="size-14" />
+  <MenuH />
   <nav
-    class="flex flex-row flex-wrap md:flex-row gap-4 items-center justify-around md:justify-center"
+    class="menu flex flex-wrap justify-center gap-14 items-center text-white text-sm flex-col fixed top-0 right-0 left-0 bottom-0 py-14 px-10 z-10 bg-slate-950"
   >
-    <a
-      href="#skills"
-      class="font-medium text-xs md:text-sm hover:text-blue-400 transition duration-300 hover:scale-105 p-2"
-      >Habilidades<span class="text-blue-800 font-bold">.</span></a
+    <a href="#acerca" class="quitarM transition-all hover:scale-110"
+      >Acerca<span class="text-blue-400 font-extrabold">.</span></a
+      
+    ><a href="#skills" class="quitarM transition-all hover:scale-110"
+      >Habilidades<span class="text-blue-400 font-extrabold">.</span></a
+    >
+    <a href="#proyectos" class="quitarM transition-all hover:scale-110"
+      >Proyectos<span class="text-blue-400 font-extrabold">.</span></a
     >
     <a
-      href="#proyectos"
-      class="font-medium text-xs md:text-sm hover:text-blue-400 transition duration-300 hover:scale-105 p-2"
-      >Proyectos<span class="text-blue-800 font-bold">.</span></a
+      href="#contact"
+      class="quitarM bg-blue-900 rounded-full p-2 hover:bg-slate-700"
+      >Contacto<span class="text-blue-400 font-extrabold">.</span></a
     >
-    <a
-      href="#footer"
-      class="font-medium text-xs md:text-sm hover:bg-blue-400 bg-blue-800 p-2 rounded-full transition duration-300 hover:scale-105"
-      >Contacto</a
-    >
+    <Close />
   </nav>
 </header>
+
+<style>
+  .menu {
+    display: none;
+  }
+</style>

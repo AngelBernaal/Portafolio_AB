@@ -1,6 +1,6 @@
 ---
 import CardPro from "./CardPro.astro";
-import Social from "./Social.astro";
+import Pill from "./Pill.astro";
 ---
 
 <section id="proyectos"
@@ -12,10 +12,10 @@ import Social from "./Social.astro";
     Proyectos.
   </h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 gap-8">
     <CardPro>
       <h1 class="font-bold">CRUD</h1>
-      <img src="image6.png" alt="interfaz crud" class="w-80" />
+      <img src="image6.jpg" alt="interfaz crud" class="w-80" />
       <p class="text-center">
         Un sistema diseñado para facilitar la reserva de boletos de cine para
         una película específica, así como también permitir su cancelación
@@ -32,7 +32,7 @@ import Social from "./Social.astro";
 
     <CardPro>
       <h1 class="font-bold">Página Autos</h1>
-      <img src="image7.png" alt="interfaz crud" class="w-80" />
+      <img src="image7.jpg" alt="interfaz crud" class="w-80" />
       <p class="text-center">
         Un sistema integral que ofrece información sobre automóviles,
         características, videos, ubicaciones y permite iniciar sesión, todo con
@@ -47,5 +47,20 @@ import Social from "./Social.astro";
         <img src="/mysql.svg" alt="mysql" class="size-5" />
       </div>
     </CardPro>
+
+
+    <CardPro>
+        <h1 class="font-bold">ToDo</h1>
+        <img src="10.png" alt="interfaz crud" class="w-80" />
+        <p class="text-center">
+        Sistema de registro de tareas ofrece una solución simple y eficaz para mantener tus responsabilidades bajo control. Con una interfaz intuitiva, priorización de tareas y recordatorios.
+        </p>
+  
+        <div class="flex gap-4 flex-wrap">
+          <img src="/html5.svg" alt="html" class="size-5" />
+          <img src="/css.svg" alt="css" class="size-5" />
+          <img src="/js.svg" alt="js" class="size-5" />
+        </div>
+      </CardPro>
   </div>
 </section>
